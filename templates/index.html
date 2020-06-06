@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Synesthesia</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}" />
+</head>
+
+<body>
+    <div id="navigation">
+        <a class="tabs active" id="bg_letters" onclick="tab(this,'bg_container')">Bulgarian</a>
+        <a class="tabs" id="en_letters" onclick="tab(this,'en_container')">English</a>
+        <a class="tabs" id="data_letters" onclick="tab(this,'data_container')">Data</a>
+    </div>
+    <div class="pages" id="bg_container">
+        <div id="bg_top" class="top_container"></div>
+        <div id="bg_bottom" class="bottom_container">
+            <textarea class="box_input" oninput="text(this,'bg')" placeholder="Write your text here..."></textarea>
+            <div id="show_bg" class="show_container"></div>
+        </div>
+    </div>
+    <div class="pages" id="en_container">
+        <div id="en_top" class="top_container"></div>
+        <div id="en_bottom" class="bottom_container">
+            <textarea class="box_input" oninput="text(this,'en')" placeholder="Write your text here..."></textarea>
+            <div id="show_en" class="show_container"></div>
+        </div>
+    </div>
+    <div class="pages" id="data_container">
+        <div id="data_en" class="show_data"></div>
+        <div id="data_bg" class="show_data"></div>
+    </div>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='ajax.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='other.js') }}"></script>
+</body>
+
+</html>
