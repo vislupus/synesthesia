@@ -6,7 +6,7 @@
 
 ## Overview
 
-A simple single-screen application built with [Flask](https://flask.palletsprojects.com/en/1.1.x/) and [Vanilla JavaScript](http://vanilla-js.com/) for visualizing a [synesthesia](https://en.wikipedia.org/wiki/Synesthesia) perceptual phenomenon on which letters are perceived as inherently colored. This is one of the common forms of synesthesia. Letters are from two alphabets Bulgarian and English. 
+A simple single-screen application implemented with [Flask](https://flask.palletsprojects.com/en/1.1.x/) and [Vanilla JavaScript](http://vanilla-js.com/) for visualizing a [synesthesia](https://en.wikipedia.org/wiki/Synesthesia) perceptual phenomenon on which letters are perceived as inherently colored. This is one of the common forms of synesthesia. Letters are from two alphabets Bulgarian and English. 
 
 ## Features
 
